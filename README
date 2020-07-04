@@ -3,7 +3,7 @@ It uses Natural Language Processing in order to help detecting keyworks (called 
 
 Because TeX files can be a bit complex, you can help tex2index to find the document's body by adding a ```%T2I-BEGIN```where you want TeX2index to start parsing your file. Otherwise it will try and look for the \begin tag.
 
-```
+```bash
 ▗▄▄▄▖     ▗▄ ▄▖ ▄▄▖  ▄▄▄         ▗▖
 ▝▀█▀▘      █▄█ ▐▀▀█▖ ▀█▀         ▐▌
   █   ▟█▙  ▐█▌    ▐▌  █  ▐▙██▖ ▟█▟▌ ▟█▙ ▝█ █▘
