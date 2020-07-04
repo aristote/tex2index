@@ -19,15 +19,15 @@ print("""
 """)
 
 #### Menu building ###############################################################################
-parser = argparse.ArgumentParser(description='Génération d\'index TeX.')
-parser.add_argument("input", help="Nom du fichier TeX à parcourir.")
-parser.add_argument("db", help="Nom de la base d'index à créer ou utiliser")
-parser.add_argument("--finalise", action="store_true", help="Générer le fichier TeX final")
-parser.add_argument("--verbose", action="store_true", help="Afficher des informations supplémentaires")
-parser.add_argument("--notext", action="store_true", help="N'indexe pas les mots individuels")
-parser.add_argument("--nlp", action="store_true", help="Lance le traitement automatique du langage naturel (lent)")
-parser.add_argument("--footnotes", action="store_true", help="Indexe les notes de bas de page")
-parser.add_argument("--purge", action="store_true", help="Purge la table d'index.")
+parser = argparse.ArgumentParser(description='TeX index Generation script.')
+parser.add_argument("input", help="TeX filename to parse.")
+parser.add_argument("db", help="database name to use (will be created if it does not exist)")
+parser.add_argument("--finalise", action="store_true", help="Generate the final TeX file")
+parser.add_argument("--verbose", action="store_true", help="Display verbose informations")
+parser.add_argument("--notext", action="store_true", help="Do not index individual words")
+parser.add_argument("--nlp", action="store_true", help="Use Natural Language Processing (slow)")
+parser.add_argument("--footnotes", action="store_true", help="Indexes footnotes")
+parser.add_argument("--purge", action="store_true", help="Purge the index table.")
 args = parser.parse_args()
 ##################################################################################################
 # -- display debug information is --verbose
