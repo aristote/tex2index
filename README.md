@@ -16,18 +16,18 @@ usage: tex2index.py [-h] [--finalise] [--verbose] [--notext] [--nlp]
                     [--footnotes] [--purge]
                     input db
 
-Génération d'index TeX.
+TeX index Generation script.
 
 positional arguments:
-  input        Nom du fichier TeX à parcourir.
-  db           Nom de la base d'index à créer ou utiliser
+  input        TeX filename to parse.
+  db           database name to use (will be created if it does not exist)
 
 optional arguments:
   -h, --help   show this help message and exit
-  --finalise   Générer le fichier TeX final
-  --verbose    Afficher des informations supplémentaires
-  --notext     N'indexe pas les mots individuels
-  --nlp        Lance le traitement automatique du langage naturel (lent)
-  --footnotes  Indexe les notes de bas de page
-  --purge      Purge la table d'index.
+  --finalise   Generate the final TeX file
+  --verbose    Display verbose informations
+  --notext     Do not index individual words
+  --nlp        Use Natural Language Processing (slow)
+  --footnotes  Indexes footnotes
+  --purge      Purge the index table.
 ```
