@@ -1,0 +1,28 @@
+```
+▗▄▄▄▖     ▗▄ ▄▖ ▄▄▖  ▄▄▄         ▗▖
+▝▀█▀▘      █▄█ ▐▀▀█▖ ▀█▀         ▐▌
+  █   ▟█▙  ▐█▌    ▐▌  █  ▐▙██▖ ▟█▟▌ ▟█▙ ▝█ █▘
+  █  ▐▙▄▟▌  █    ▗▛   █  ▐▛ ▐▌▐▛ ▜▌▐▙▄▟▌ ▐█▌
+  █  ▐▛▀▀▘ ▐█▌  ▗▛    █  ▐▌ ▐▌▐▌ ▐▌▐▛▀▀▘ ▗█▖
+  █  ▝█▄▄▌ █ █ ▗█▄▄▖ ▄█▄ ▐▌ ▐▌▝█▄█▌▝█▄▄▌ ▟▀▙
+  ▀   ▝▀▀ ▝▀ ▀▘▝▀▀▀▘ ▀▀▀ ▝▘ ▝▘ ▝▀▝▘ ▝▀▀ ▝▀ ▀▘
+
+usage: tex2index.py [-h] [--finalise] [--verbose] [--notext] [--nlp]
+                    [--footnotes] [--purge]
+                    input db
+
+Génération d'index TeX.
+
+positional arguments:
+  input        Nom du fichier TeX à parcourir.
+  db           Nom de la base d'index à créer ou utiliser
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --finalise   Générer le fichier TeX final
+  --verbose    Afficher des informations supplémentaires
+  --notext     N'indexe pas les mots individuels
+  --nlp        Lance le traitement automatique du langage naturel (lent)
+  --footnotes  Indexe les notes de bas de page
+  --purge      Purge la table d'index.
+```
